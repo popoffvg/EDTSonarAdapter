@@ -74,8 +74,6 @@ public class ExternalBSLValidator implements IExternalBslValidator {
 
 		IFile moduleFile = ResourcesPlugin.getWorkspace().getRoot()
 				.getFile(new Path(EcoreUtil.getURI(moduleObject).toPlatformString(true)));
-		// L/Конфигурация/src/CommonModules/ОбщийМодуль/Module.bsl
-//				"SSL313_noplugin:SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl");
 		var path = moduleFile.getProjectRelativePath().toString();
 		
 		HashMap<String, String> params = new HashMap<>();
@@ -85,8 +83,7 @@ public class ExternalBSLValidator implements IExternalBslValidator {
 		URI uri = URI.create(server + "/api/issues/search?" + paramsQuery(params));
 		
 		// TODO paging
-//		URI uri = URI
-//				.create("https://375d777d-a0a6-47e2-bf3f-e1fb9e9cfe91.mock.pstmn.io/api/issues/search?" + parameters);
+		// TODO timeout
 		HttpClient httpClient = HttpClient.newBuilder().build();
 		HttpRequest request = HttpRequest.newBuilder().GET()
 				.uri(uri)
@@ -122,18 +119,16 @@ public class ExternalBSLValidator implements IExternalBslValidator {
 		int startOffset = startOffsetFromTextRange(issue.getTextRange());
 		acceptor.acceptInfo("acc: " + issue.getMessage(),
 				moduleObject,
-				startOffset + issue.getTextRange().getStartOffset(),
-//			startOffset + issue.getTextRange().getEndOffset(),
-				1,
-//						0,
+				startOffset,
+				issue.getTextRange().getEndOffset() - issue.getTextRange().getStartOffset(),
 				"QUICKFIX_CODE");
 	}
 
 	private int startOffsetFromTextRange(TextRange range) {
-		return calculateLineOffset(range.getStartLine());
+		return calculateLineOffset(range.getStartLine())+range.getStartOffset();
 	}
 
 	private int calculateLineOffset(int startLine) {
-		return moduleText.lines().limit(startLine).mapToInt(l -> l.length() + 1).sum();
+		return moduleText.lines().limit(startLine).mapToInt(String::length).sum();
 	}
 }
