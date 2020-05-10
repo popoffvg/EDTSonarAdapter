@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com._1c.g5.v8.dt.bsl.externalBslValidator">
+      <externalValidator
+            class="ru.popoffvg.sonaradapter.ExecutableExtensionFactory:ru.popoffvg.sonarqube.ExternalBSLValidator">
+      </externalValidator>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            category="ru.popoffvg.sonaradapter.category"
+            class="ru.popoffvg.sonaradapter.ui.SonarAdapterPropertyPage"
+            id="ru.popoffvg.sonaradapter.propertypage"
+            name="Sonar adapter">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="ru.popoffvg.sonaradapter.category"
+            name="Sonar Adapter">
+      </category>
+   </extension>
+
+</plugin>

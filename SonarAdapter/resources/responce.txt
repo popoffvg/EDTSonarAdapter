@@ -1,0 +1,171 @@
+{
+    "total": 5,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 5
+    },
+    "effortTotal": 0,
+    "debtTotal": 0,
+    "issues": [
+        {
+            "key": "AXFUnWxpHPcv8mlM0TCs",
+            "rule": "external_edt:Пустой метод %1",
+            "severity": "MINOR",
+            "component": "SSL313_noplugin:SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl",
+            "project": "SSL313_noplugin",
+            "line": 41,
+            "hash": "776642ce932b422d295ec640584d1585",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 0,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Пустой метод \"ПриПеренаправленииЗадачи\"",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "",
+            "tags": [],
+            "creationDate": "2020-04-06T17:43:38+0300",
+            "updateDate": "2020-04-07T17:53:19+0300",
+            "type": "CODE_SMELL",
+            "organization": "default-organization",
+            "externalRuleEngine": "edt"
+        },
+        {
+            "key": "AXFUnWxpHPcv8mlM0TCp",
+            "rule": "external_edt:Пустой метод %1",
+            "severity": "MINOR",
+            "component": "SSL313_noplugin:SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl",
+            "project": "SSL313_noplugin",
+            "line": 52,
+            "hash": "a9f1dcf36f9c47578d783ae39f9fb163",
+            "textRange": {
+                "startLine": 52,
+                "endLine": 52,
+                "startOffset": 0,
+                "endOffset": 112
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Пустой метод \"ОбработкаВыполненияПоУмолчанию\"",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "",
+            "tags": [],
+            "creationDate": "2020-04-06T17:43:38+0300",
+            "updateDate": "2020-04-07T17:53:19+0300",
+            "type": "CODE_SMELL",
+            "organization": "default-organization",
+            "externalRuleEngine": "edt"
+        },
+        {
+            "key": "AXFUnWxpHPcv8mlM0TCq",
+            "rule": "external_edt:Пустой метод %1",
+            "severity": "MINOR",
+            "component": "SSL313_noplugin:SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl",
+            "project": "SSL313_noplugin",
+            "line": 64,
+            "hash": "39f702c21b2949f01c4d685fade48b0a",
+            "textRange": {
+                "startLine": 64,
+                "endLine": 64,
+                "startOffset": 0,
+                "endOffset": 119
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Пустой метод \"ПриЗаполненииГлавнойЗадачиБизнесПроцесса\"",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "",
+            "tags": [],
+            "creationDate": "2020-04-06T17:43:38+0300",
+            "updateDate": "2020-04-07T17:53:19+0300",
+            "type": "CODE_SMELL",
+            "organization": "default-organization",
+            "externalRuleEngine": "edt"
+        },
+        {
+            "key": "AXFUnWxpHPcv8mlM0TCr",
+            "rule": "external_edt:Пустой метод %1",
+            "severity": "MINOR",
+            "component": "SSL313_noplugin:SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl",
+            "project": "SSL313_noplugin",
+            "line": 99,
+            "hash": "8a50f90f9d89fa8d0e4f0fa51aa48913",
+            "textRange": {
+                "startLine": 99,
+                "endLine": 99,
+                "startOffset": 0,
+                "endOffset": 74
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Пустой метод \"ПриОпределенииНастроекВерсионированияОбъектов\"",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "",
+            "tags": [],
+            "creationDate": "2020-04-06T17:43:38+0300",
+            "updateDate": "2020-04-07T17:53:19+0300",
+            "type": "CODE_SMELL",
+            "organization": "default-organization",
+            "externalRuleEngine": "edt"
+        },
+        {
+            "key": "AXFUnWxpHPcv8mlM0TCo",
+            "rule": "external_edt:Пустой метод %1",
+            "severity": "MINOR",
+            "component": "SSL313_noplugin:SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl",
+            "project": "SSL313_noplugin",
+            "line": 165,
+            "hash": "a691fdb0e7139e2db7bd5947ef4534e8",
+            "textRange": {
+                "startLine": 165,
+                "endLine": 165,
+                "startOffset": 0,
+                "endOffset": 91
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Пустой метод \"ДобавитьКомандыСозданияНаОсновании\"",
+            "effort": "0min",
+            "debt": "0min",
+            "author": "",
+            "tags": [],
+            "creationDate": "2020-04-06T17:43:38+0300",
+            "updateDate": "2020-04-07T17:53:19+0300",
+            "type": "CODE_SMELL",
+            "organization": "default-organization",
+            "externalRuleEngine": "edt"
+        }
+    ],
+    "components": [
+        {
+            "organization": "default-organization",
+            "key": "SSL313_noplugin",
+            "uuid": "AXFP6gzqtn6zKbExoD0r",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "SSL313_noplugin",
+            "longName": "SSL313_noplugin"
+        },
+        {
+            "organization": "default-organization",
+            "key": "SSL313_noplugin:SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl",
+            "uuid": "AXFP9k4WHPcv8mlMzYkm",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ManagerModule.bsl",
+            "longName": "SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl",
+            "path": "SSL/BusinessProcesses/_ДемоЗаданиеСРолевойАдресацией/Ext/ManagerModule.bsl"
+        }
+    ],
+    "facets": []
+}
