@@ -14,7 +14,7 @@ Sonar Qube может выступать ветриной для замечан�
 
 ## Установка
 
-Выбрать в качестве источника обновления https://github.com/popoffvg/EDTSonarAdapter/blob/master/source/SonarAdapter.zip.
+Выбрать в качестве источника обновления https://github.com/popoffvg/EDTSonarAdapter/raw/master/source/SonarAdapter.zip.
 
 ![](./doc/sourceUpdateSettings.png)
 
