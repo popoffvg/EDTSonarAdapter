@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="ru.popoffvg.sonaradapter"/>
+   <category-def name="ru.popoffvg.sonaradapter.category" label="1C: Enterprise Development Tools Sonar Adapter"/>
+</site>

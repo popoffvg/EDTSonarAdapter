@@ -12,6 +12,8 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.ui.dialogs.PropertyPage;
 
+import com.google.inject.Inject;
+
 import ru.popoffvg.sonaradapter.SonarAdapterPlugin;
 
 public class SonarAdapterPropertyPage extends PropertyPage {
@@ -19,6 +21,8 @@ public class SonarAdapterPropertyPage extends PropertyPage {
 	private ArrayList<AbstractPropertyView> propertyElements = new ArrayList<>();
 
 	private IPreferenceStore prefs;
+	@Inject
+	private SonarAdapterPlugin plugin;
 	
 	/**
 	 * @see PreferencePage#createContents(Composite)
@@ -55,12 +59,16 @@ public class SonarAdapterPropertyPage extends PropertyPage {
 			.title("Excludes")
 			.build();
 		
+		newTextProperty(composite, SonarAdapterPlugin.ASSIGNED_PROPERTY)
+			.title("Assign")
+			.build();
+		
 		return composite;
 	}
 
 	@Override
 	protected IPreferenceStore doGetPreferenceStore() {
-		return SonarAdapterPlugin.getDefault().getPreferenceStore((IProject) getElement());
+		return plugin.getPreferenceStore((IProject) getElement());
 	}
 
 	BoolPropertyView newBoolProperty(Composite composite, String id) {

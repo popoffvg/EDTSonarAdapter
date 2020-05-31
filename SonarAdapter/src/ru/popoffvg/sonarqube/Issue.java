@@ -10,7 +10,7 @@ public class Issue {
 	String severity;
 	String component;
 	String project;
-	public TextRange getTextRange() {
+	public SonarTextRange getTextRange() {
 		return textRange;
 	}
 
@@ -20,12 +20,12 @@ public class Issue {
 
 	int line;
 	String hash;
-	TextRange textRange;
+	SonarTextRange textRange;
 	String status;
 	String message;
 	String author;
 	
-	public class TextRange{
+	public class SonarTextRange{
 		public int getStartLine() {
 			return startLine;
 		}

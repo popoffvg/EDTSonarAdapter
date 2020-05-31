@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="ru.popoffvg.sonaradapter.source" version="0.1.0.20200531-1244" label="%featureName">
+  <plugin id="ru.popoffvg.sonaradapter.plugin.source" version="0.1.0.20200531-1244" download-size="0" install-size="0" unpack="false"/>
+</feature>

@@ -1,6 +1,7 @@
 package ru.popoffvg.sonarqube;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SearchResponce {
 	int total;
@@ -10,7 +11,12 @@ public class SearchResponce {
 	int effortTotal;
 	int debtTotal;
 	ArrayList<Issue> issues;
-	public ArrayList<Issue> getIssues() {
+	
+	public List<Issue> getIssues() {
 		return issues;
+	}
+	
+	public int numberOfPages() {
+		return paging.numberOfPages();
 	}
 }

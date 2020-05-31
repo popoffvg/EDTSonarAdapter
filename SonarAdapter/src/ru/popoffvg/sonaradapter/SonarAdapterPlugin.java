@@ -24,6 +24,7 @@ public class SonarAdapterPlugin extends AbstractUIPlugin {
 	public static final String KEY_ID_PROPERTY = "ru.popoffvg.sonaradapter.key"; //$NON-NLS-1$
 	public static final String PROJECT_ID_PROPERTY = "ru.popoffvg.sonaradapter.project"; //$NON-NLS-1$
 	public static final String LOAD_SONAR_ISSUES_PROPERTY = "ru.popoffvg.sonaradapter.loadIssues"; //$NON-NLS-1$
+	public static final String ASSIGNED_PROPERTY = "ru.popoffvg.sonaradapter.assign"; //$NON-NLS-1$
 	
 	private Injector injector;
 	
