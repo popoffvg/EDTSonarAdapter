@@ -11,7 +11,22 @@ Require-Bundle: org.eclipse.core.runtime,
  com._1c.g5.v8.dt.bsl.model;bundle-version="6.3.200",
  com.google.gson;bundle-version="2.8.2",
  org.eclipse.core.resources,
- com._1c.g5.v8.dt.bsl.ui;bundle-version="12.2.0"
+ com._1c.g5.v8.dt.bsl.ui;bundle-version="12.2.0",
+ org.eclipse.jgit;bundle-version="5.6.0",
+ org.junit,
+ org.junit.jupiter.api,
+ org.junit.jupiter.engine,
+ org.junit.jupiter.migrationsupport,
+ org.junit.jupiter.params,
+ org.junit.platform.commons,
+ org.junit.platform.engine,
+ org.junit.platform.launcher,
+ org.junit.platform.runner,
+ org.junit.platform.suite.api,
+ org.junit.vintage.engine,
+ org.hamcrest.core,
+ org.opentest4j,
+ org.apiguardian
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: ru.popoffvg.sonaradapter.plugin
 Bundle-ActivationPolicy: lazy

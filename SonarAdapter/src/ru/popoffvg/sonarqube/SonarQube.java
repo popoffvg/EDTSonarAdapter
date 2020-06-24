@@ -12,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map.Entry;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -43,6 +44,19 @@ public class SonarQube {
 			// TODO неправильное изменение numberOfPages
 			.takeWhile(this::hasNextPage)
 			.flatMap(i -> getIssues(i, params));
+	}
+	
+	public Optional<String> getRawText(String key) {
+		Optional<String> text = Optional.empty();
+		HashMap<String, String>queryParams = new HashMap<>();
+		queryParams.put("key", key);
+		try {
+			String moduleText = doQuery("/api/sources/raw", queryParams).body();
+			text = Optional.of(moduleText.replace("\r", ""));
+		} catch (Exception e) {
+			SonarAdapterPlugin.logError(e);
+		}
+		return text;
 	}
 	
 	private Stream<Issue> getIssues(int pageNumber, HashMap<String, String> params){
